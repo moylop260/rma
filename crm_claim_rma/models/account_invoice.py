@@ -31,6 +31,9 @@ class AccountInvoice(models.Model):
 
     claim_id = fields.Many2one('crm.claim', string='Claim')
 
+    def __init__(self):
+        return True
+
     @api.model
     def _refund_cleanup_lines(self, lines):
         """
