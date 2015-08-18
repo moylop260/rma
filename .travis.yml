@@ -20,7 +20,7 @@ virtualenv:
   system_site_packages: true
 
 install:
-  - git clone https://github.com/OCA/maintainer-quality-tools.git $HOME/maintainer-quality-tools
+  - git clone https://github.com/vauxoo-dev/maintainer-quality-tools.git -b oca-pylint-bash2py-moy2 $HOME/maintainer-quality-tools
   - export PATH=$HOME/maintainer-quality-tools/travis:$PATH
   - travis_install_nightly
   # add OCA/crm dependencies
